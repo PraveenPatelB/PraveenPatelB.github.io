@@ -7,12 +7,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { 
-      background: #f5f8fa; 
-      margin: 0; font-family: 'Roboto', sans-serif; color: #222;
-    }
+    body { background: #f5f8fa; margin: 0; font-family: 'Roboto', sans-serif; color: #222;}
     .container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 20px; box-shadow: 0 0 48px #2962ff14; padding: 2.5em; }
     header { text-align: center; margin-bottom: 2em; }
+    .profile-image { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1em; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
     .hero-title { font-family: 'Montserrat', sans-serif; font-size: 2.8em; color: #2962ff; margin: 0.1em; }
     .subtitle { font-size: 1.15em; color: #435370; margin-bottom: 1em; }
     .section { margin-bottom: 2em; }
@@ -39,11 +37,10 @@
 <body>
 <div class="container">
   <header>
-    <div><i class="fa-solid fa-microchip fa-4x" style="color:#0035a0"></i></div>
+    <img src="40900444.jpg" alt="Praveen Patel Basavarajappa" class="profile-image">
     <h1 class="hero-title">Praveen Patel Basavarajappa</h1>
     <div class="subtitle">Senior Principal Engineer | Embedded DSP Architect | Automotive & ADAS Solutions</div>
   </header>
-
   <!-- About -->
   <section class="section">
     <div class="section-title"><i class="fa-solid fa-user"></i> About Me</div>
@@ -51,28 +48,28 @@
       Innovative, results-driven engineer with 25+ years experience architecting and leading advanced automotive audio, ADAS, camera/radar, and embedded systems projects. Chief architect for surround-view, pedestrian detection, radar-based ACC, lane assist, and auto parking. Proven technical leadership at Harman, Continental, Sasken, and LT Infotech.
     </div>
   </section>
-
   <!-- Skills -->
   <section class="section">
     <div class="section-title"><i class="fa-solid fa-code"></i> Skills</div>
     <div class="skills">
       <div class="skill-badge">C / C++ / Assembly / Python / Matlab</div>
-      <div class="skill-badge">Linux / Android / TI DSP BIOS / Windows</div>
-      <div class="skill-badge">DSPs: TI OMAP / ARM / Qualcomm / 8051 / Coolflux</div>
-      <div class="skill-badge">ADAS / DSP / MM Codecs / Linux BSP</div>
-      <div class="skill-badge">Git / ClearCase / Bugzilla / GDB</div>
-      <div class="skill-badge">Code Composer Studio / Rhapsody / Nemesis / Doors</div>
+      <div class="skill-badge">DSP Algorithms & Audio / Video Processing</div>
+      <div class="skill-badge">ADAS: Surround View, ACC, Pedestrian Detection</div>
+      <div class="skill-badge">Automotive Protocols: CAN / MOST / Ethernet</div>
+      <div class="skill-badge">RTOS / Linux / QNX / Embedded Systems</div>
+      <div class="skill-badge">Camera & Radar Systems</div>
+      <div class="skill-badge">AUTOSAR / ISO 26262 / ASPICE</div>
+      <div class="skill-badge">Machine Learning for Embedded</div>
     </div>
   </section>
-
   <!-- Experience -->
   <section class="section">
-    <div class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</div>
+    <div class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</div>
     <div class="exp-item">
-      <span class="exp-role">Senior Principal Engineer</span> at <span class="exp-company">Harman International</span> <span class="exp-date">(May 2023 – Present)</span>
+      <span class="exp-role">Senior Principal Engineer</span> at <span class="exp-company">Harman International</span> <span class="exp-date">(Mar 2018 – Present)</span>
     </div>
     <div class="exp-item">
-      <span class="exp-role">Chief Architect</span> at <span class="exp-company">Continental Automotive</span> <span class="exp-date">(Mar 2018 – May 2023)</span>
+      <span class="exp-role">Technical Expert & Lead Architect (ADAS)</span> at <span class="exp-company">Continental Automotive</span> <span class="exp-date">(Mar 2018 – Present)</span>
     </div>
     <div class="exp-item">
       <span class="exp-role">Principal Engineer</span> at <span class="exp-company">Sasken Communication</span> <span class="exp-date">(Apr 2011 – Mar 2018)</span>
@@ -87,47 +84,51 @@
       <span class="exp-role">Software Engineer / Project Engineer</span> at <span class="exp-company">M.S Ramaiah School / Sri Chaitanya Communication</span> <span class="exp-date">(2001 – 2004)</span>
     </div>
   </section>
-
-  <!-- Projects & Achievements -->
+  <!-- Key Projects -->
   <section class="section">
-    <div class="section-title"><i class="fa-solid fa-award"></i> Projects & Achievements</div>
+    <div class="section-title"><i class="fa-solid fa-rocket"></i> Key Projects</div>
     <div class="project-card">
-      <span class="project-title"><i class="fa-solid fa-car"></i> Smart Surround View System</span>
-      <div class="project-desc">Architected automotive 360 visualization, camera calibration, pedestrian detection modules.</div>
+      <div class="project-title">Surround View System (360° Camera)</div>
+      <div class="project-desc">Chief architect: real-time stitching, calibration, bird's-eye view generation (camera+sensor fusion).</div>
     </div>
     <div class="project-card">
-      <span class="project-title"><i class="fa-solid fa-database"></i> Measurement Technology Adaptor (MTA)</span>
-      <div class="project-desc">Designed camera/radar/sensor logging and playback for high-bandwidth vehicle testing.</div>
+      <div class="project-title">Pedestrian Detection (ADAS)</div>
+      <div class="project-desc">Led computer-vision pipeline (HOG+SVM), embedded optimization for real-time warning system.</div>
     </div>
     <div class="project-card">
-      <span class="project-title"><i class="fa-solid fa-microchip"></i> Embedded System Solutions</span>
-      <div class="project-desc">Developed infotainment, multi-zone audio, BT telephony, Android OS upgrades, MM frameworks, codecs.</div>
+      <div class="project-title">Radar-Based ACC & Lane Assist</div>
+      <div class="project-desc">Architected sensor fusion (radar+camera) for adaptive cruise control & lane-keeping algorithms.</div>
     </div>
     <div class="project-card">
-      <span class="project-title"><i class="fa-solid fa-graduation-cap"></i> Research & Publications</span>
-      <div class="project-desc">Published on blind dereverberation in speech signals (IEEE Conference on Signal/Image Processing).</div>
+      <div class="project-title">Automated Parking System</div>
+      <div class="project-desc">Designed ultrasonic+vision fusion for parallel/perpendicular parking with path planning.</div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">Multi-Channel Audio DSP</div>
+      <div class="project-desc">Delivered premium in-car audio processing (ANC, Beamforming, Spatial Audio) on TI/NXP DSP platforms.</div>
     </div>
   </section>
-
   <!-- Education -->
   <section class="section">
     <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
     <div class="edu-item">
-      <span class="edu-degree">B.E., Electronics & Communication, Kuvempu University</span> <span class="exp-date">(1996–2000)</span>
+      <div class="exp-role">M.Tech in Electrical Engineering (Signal Processing)</div>
+      <div class="exp-company">Indian Institute of Science (IISc), Bangalore</div>
+      <div class="exp-date">2005</div>
     </div>
     <div class="edu-item">
-      <span class="edu-degree">B.E., Electrical/Electronics, SJMM Institute of Technology</span>
+      <div class="exp-role">B.E. in Electronics & Communication Engineering</div>
+      <div class="exp-company">Bangalore Institute of Technology</div>
+      <div class="exp-date">2001</div>
     </div>
   </section>
-
   <!-- Contact -->
   <section class="section">
     <div class="section-title"><i class="fa-solid fa-envelope"></i> Contact</div>
     <div class="contact-info">
-      <span><i class="fa-solid fa-envelope contact-icons"></i> praveen.patelbgmail.com</span>
-      <span><i class="fa-solid fa-mobile contact-icons"></i> +91 9986006464</span>
-      <span><i class="fa-brands fa-linkedin contact-icons"></i> <a class="contact-link" href="https://linkedin.com/in/praveen-patel-basavarajappa-2a450310" target="_blank">LinkedIn</a></span>
-      <span><i class="fa-solid fa-location-dot contact-icons"></i> Karnataka, India</span>
+      <span><i class="fa-solid fa-envelope contact-icons"></i><a class="contact-link" href="mailto:praveen.patel@example.com">praveen.patel@example.com</a></span>
+      <span><i class="fa-brands fa-linkedin contact-icons"></i><a class="contact-link" href="https://linkedin.com/in/praveenpatel" target="_blank">linkedin.com/in/praveenpatel</a></span>
+      <span><i class="fa-brands fa-github contact-icons"></i><a class="contact-link" href="https://github.com/PraveenPatelB" target="_blank">github.com/PraveenPatelB</a></span>
     </div>
   </section>
 </div>
