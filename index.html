@@ -1,207 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praveen Patel - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            color: white;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        header p {
-            font-size: 1.3em;
-            opacity: 0.9;
-        }
-
-        .content {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin: 20px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .skill-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-left: 4px solid #667eea;
-        }
-
-        .project h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .contact-item {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            text-align: center;
-            color: white;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .content {
-                padding: 20px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Praveen Patel Basavarajappa | Senior Principal Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { 
+      background: #f5f8fa; 
+      margin: 0; font-family: 'Roboto', sans-serif; color: #222;
+    }
+    .container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 20px; box-shadow: 0 0 48px #2962ff14; padding: 2.5em; }
+    header { text-align: center; margin-bottom: 2em; }
+    .hero-title { font-family: 'Montserrat', sans-serif; font-size: 2.8em; color: #2962ff; margin: 0.1em; }
+    .subtitle { font-size: 1.15em; color: #435370; margin-bottom: 1em; }
+    .section { margin-bottom: 2em; }
+    .section-title { font-size: 1.25em; font-weight: 700; color: #2962ff; margin-bottom: 0.65em; display: flex; align-items: center; gap: 0.5em;}
+    .section-title i { color: #0035a0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5em; }
+    .skill-badge { background: #eaf2fb; color: #0035a0; border-radius: 16px; padding: 0.4em 1em; font-weight: 500; font-size: 1em;}
+    .exp-item, .project-card, .edu-item { background: #f6fcff; border-radius: 16px; margin-bottom: 1em; padding: 1em; box-shadow: 0 2px 24px #2962ff0a; }
+    .exp-role { font-weight: 600; color: #2962ff; }
+    .exp-company { color: #435370; font-weight: 500; }
+    .exp-date { font-size: 0.95em; color: #555; }
+    .project-title { font-weight: bold; color: #0035a0;}
+    .project-desc { color: #222; font-size: 1em;}
+    .contact-icons { font-size: 1.3em; color: #2962ff; margin-right: 1.2em;}
+    .contact-info { display: flex; flex-wrap: wrap; gap: 1em; margin-top: 0.7em;}
+    .contact-link { color: #2962ff; text-decoration: none; font-weight: 500;}
+    @media (max-width: 700px) {
+      .container { padding: 1em; }
+      header { margin-bottom: 1em; }
+      .exp-role, .project-title, .edu-degree { font-size: 1em;}
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Praveen Patel</h1>
-            <p>Web Developer & Designer</p>
-        </header>
+<div class="container">
+  <header>
+    <div><i class="fa-solid fa-microchip fa-4x" style="color:#0035a0"></i></div>
+    <h1 class="hero-title">Praveen Patel Basavarajappa</h1>
+    <div class="subtitle">Senior Principal Engineer | Embedded DSP Architect | Automotive & ADAS Solutions</div>
+  </header>
 
-        <div class="content">
-            <div class="section">
-                <h2>About Me</h2>
-                <p>Welcome to my portfolio! I'm a passionate web developer with expertise in creating modern, responsive websites. I love turning ideas into reality through clean code and beautiful design.</p>
-            </div>
-
-            <div class="section">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>HTML5</h3>
-                        <p>Semantic markup</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>CSS3</h3>
-                        <p>Modern styling</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>JavaScript</h3>
-                        <p>Interactive features</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Responsive Design</h3>
-                        <p>Mobile-first approach</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Project One</h3>
-                    <p>A modern web application built with the latest technologies. Features include responsive design, smooth animations, and optimal performance.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Two</h3>
-                    <p>An innovative solution for everyday problems. This project showcases clean code architecture and user-friendly interface design.</p>
-                </div>
-                <div class="project">
-                    <h3>Project Three</h3>
-                    <p>A comprehensive platform that demonstrates full-stack development skills and modern web development practices.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <a href="mailto:contact@example.com" class="contact-item">Email Me</a>
-                    <a href="https://github.com/PraveenPatelB" class="contact-item">GitHub</a>
-                    <a href="https://linkedin.com" class="contact-item">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Praveen Patel. All rights reserved.</p>
-        </footer>
+  <!-- About -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-user"></i> About Me</div>
+    <div>
+      Innovative, results-driven engineer with 25+ years experience architecting and leading advanced automotive audio, ADAS, camera/radar, and embedded systems projects. Chief architect for surround-view, pedestrian detection, radar-based ACC, lane assist, and auto parking. Proven technical leadership at Harman, Continental, Sasken, and LT Infotech.
     </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-code"></i> Skills</div>
+    <div class="skills">
+      <div class="skill-badge">C / C++ / Assembly / Python / Matlab</div>
+      <div class="skill-badge">Linux / Android / TI DSP BIOS / Windows</div>
+      <div class="skill-badge">DSPs: TI OMAP / ARM / Qualcomm / 8051 / Coolflux</div>
+      <div class="skill-badge">ADAS / DSP / MM Codecs / Linux BSP</div>
+      <div class="skill-badge">Git / ClearCase / Bugzilla / GDB</div>
+      <div class="skill-badge">Code Composer Studio / Rhapsody / Nemesis / Doors</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</div>
+    <div class="exp-item">
+      <span class="exp-role">Senior Principal Engineer</span> at <span class="exp-company">Harman International</span> <span class="exp-date">(May 2023 – Present)</span>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Chief Architect</span> at <span class="exp-company">Continental Automotive</span> <span class="exp-date">(Mar 2018 – May 2023)</span>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Principal Engineer</span> at <span class="exp-company">Sasken Communication</span> <span class="exp-date">(Apr 2011 – Mar 2018)</span>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Project Leader</span> at <span class="exp-company">LT Infotech</span> <span class="exp-date">(June 2005 – Apr 2011)</span>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Powertrain Software Engineer</span> at <span class="exp-company">Visteon</span> <span class="exp-date">(Aug 2004 – May 2005)</span>
+    </div>
+    <div class="exp-item">
+      <span class="exp-role">Software Engineer / Project Engineer</span> at <span class="exp-company">M.S Ramaiah School / Sri Chaitanya Communication</span> <span class="exp-date">(2001 – 2004)</span>
+    </div>
+  </section>
+
+  <!-- Projects & Achievements -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-award"></i> Projects & Achievements</div>
+    <div class="project-card">
+      <span class="project-title"><i class="fa-solid fa-car"></i> Smart Surround View System</span>
+      <div class="project-desc">Architected automotive 360 visualization, camera calibration, pedestrian detection modules.</div>
+    </div>
+    <div class="project-card">
+      <span class="project-title"><i class="fa-solid fa-database"></i> Measurement Technology Adaptor (MTA)</span>
+      <div class="project-desc">Designed camera/radar/sensor logging and playback for high-bandwidth vehicle testing.</div>
+    </div>
+    <div class="project-card">
+      <span class="project-title"><i class="fa-solid fa-microchip"></i> Embedded System Solutions</span>
+      <div class="project-desc">Developed infotainment, multi-zone audio, BT telephony, Android OS upgrades, MM frameworks, codecs.</div>
+    </div>
+    <div class="project-card">
+      <span class="project-title"><i class="fa-solid fa-graduation-cap"></i> Research & Publications</span>
+      <div class="project-desc">Published on blind dereverberation in speech signals (IEEE Conference on Signal/Image Processing).</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+    <div class="edu-item">
+      <span class="edu-degree">B.E., Electronics & Communication, Kuvempu University</span> <span class="exp-date">(1996–2000)</span>
+    </div>
+    <div class="edu-item">
+      <span class="edu-degree">B.E., Electrical/Electronics, SJMM Institute of Technology</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="section-title"><i class="fa-solid fa-envelope"></i> Contact</div>
+    <div class="contact-info">
+      <span><i class="fa-solid fa-envelope contact-icons"></i> praveen.patelbgmail.com</span>
+      <span><i class="fa-solid fa-mobile contact-icons"></i> +91 9986006464</span>
+      <span><i class="fa-brands fa-linkedin contact-icons"></i> <a class="contact-link" href="https://linkedin.com/in/praveen-patel-basavarajappa-2a450310" target="_blank">LinkedIn</a></span>
+      <span><i class="fa-solid fa-location-dot contact-icons"></i> Karnataka, India</span>
+    </div>
+  </section>
+</div>
 </body>
 </html>
